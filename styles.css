@@ -97,6 +97,22 @@ body {
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
     border-radius: 8px;
 }
+/* 衛教頁 */
+.columnContainer {
+    max-width: 1200px;
+    max-height: 1200px;
+    margin: 100px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+}
+.column{
+    width: 33%;
+    margin: 50px 100px;
+}
 /* 🔹 熱銷區塊標題 */
 .section-title {
     font-size: 24px;
@@ -121,8 +137,14 @@ body {
     text-align: center;
     font-size: 16px;
     color: #333;
-    flex: 1 1 calc(20% - 15px); /* 5 欄 */
+    flex: 1 1 calc(20% - 15px);
+    /* 5 欄 */
     min-width: 150px;
+}
+
+.product-card img {
+    width: 150px;
+    height: 150px;
 }
 
 /* 🔹 前 3 名商品特殊設計 */
@@ -153,31 +175,37 @@ body {
 /* 🔹 RWD（平板） */
 @media screen and (max-width: 1024px) {
     .product-card {
-        flex: 1 1 calc(33.33% - 15px); /* 3 欄 */
+        flex: 1 1 calc(33.33% - 15px);
+        /* 3 欄 */
     }
 }
 
 /* 🔹 RWD（手機） */
 @media screen and (max-width: 768px) {
     .product-card {
-        flex: 1 1 calc(50% - 15px); /* 2 欄 */
+        flex: 1 1 calc(50% - 15px);
+        /* 2 欄 */
     }
 }
+
 /* 產品區塊 */
-.productArea{
+.productArea {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
 }
-.product{
+
+.product {
     width: 400px;
-    height:500px;
+    height: 500px;
     margin: 25px;
 }
-.product img{
+
+.product img {
     width: 300px;
     height: 300px;
 }
+
 /* 🔹 按鈕 */
 button {
     background-color: #0D47A1;
@@ -236,10 +264,29 @@ video {
 }
 
 /* 🔹 各部位座標 */
-.head { top: -3%; left: 50%; transform: translateX(-50%); }
-.eye { top: 3%; left: 53%; transform: translateX(-50%); }
-.chest { top: 18%; left: 50%; transform: translateX(-50%); }
-.leg { bottom: 38%; left: 56%; transform: translateX(-50%); }
+.head {
+    top: -3%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.eye {
+    top: 3%;
+    left: 53%;
+    transform: translateX(-50%);
+}
+
+.chest {
+    top: 18%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.leg {
+    bottom: 38%;
+    left: 56%;
+    transform: translateX(-50%);
+}
 
 /* 🔹 RWD（平板） */
 @media screen and (max-width: 1024px) {
@@ -254,6 +301,7 @@ video {
     .body-map {
         max-width: 300px;
     }
+
     .body-part {
         font-size: 14px;
         padding: 4px 6px;
@@ -265,10 +313,12 @@ video {
     .navbar {
         padding: 10px;
     }
+
     .navbar ul {
         flex-direction: row;
         gap: 10px;
     }
+
     .container {
         max-width: 90%;
         padding: 15px;
@@ -281,22 +331,27 @@ video {
         flex-direction: column;
         align-items: center;
     }
+
     .navbar ul {
         flex-direction: column;
         width: 100%;
         text-align: center;
     }
+
     .navbar li {
         width: 100%;
     }
+
     .dropdown-menu {
         position: static;
         display: none;
         width: 100%;
     }
+
     .dropdown:hover .dropdown-menu {
         display: block;
     }
+
     .container {
         max-width: 95%;
     }
