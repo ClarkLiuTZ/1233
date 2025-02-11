@@ -77,8 +77,8 @@ body {
 
 /* 🔹 內容區塊 */
 .container {
-    max-width: 800px;
-    margin: 80px auto 40px auto;
+    max-width: 1200px;
+    margin: 100px auto;
     padding: 20px;
     background: white;
     border-radius: 12px;
@@ -91,12 +91,78 @@ body {
     font-size: 24px;
     color: #0D47A1;
     font-weight: bold;
+    text-align: center;
     margin-bottom: 20px;
     padding: 10px 0;
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
     border-radius: 8px;
 }
+/* 🔹 熱銷區塊標題 */
+.section-title {
+    font-size: 24px;
+    color: #1565C0;
+    margin-bottom: 15px;
+}
 
+/* 🔹 商品列表（Flex 排版） */
+.product-list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 15px;
+}
+
+/* 🔹 一般商品卡片 */
+.product-card {
+    background: #FFFFFF;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    font-size: 16px;
+    color: #333;
+    flex: 1 1 calc(20% - 15px); /* 5 欄 */
+    min-width: 150px;
+}
+
+/* 🔹 前 3 名商品特殊設計 */
+.top1 {
+    background: #FFD700;
+    font-weight: bold;
+    color: #000;
+    border: 2px solid #FFC107;
+    transform: scale(1.05);
+}
+
+.top2 {
+    background: #C0C0C0;
+    font-weight: bold;
+    color: #000;
+    border: 2px solid #B0BEC5;
+    transform: scale(1.05);
+}
+
+.top3 {
+    background: #CD7F32;
+    font-weight: bold;
+    color: #000;
+    border: 2px solid #8D6E63;
+    transform: scale(1.05);
+}
+
+/* 🔹 RWD（平板） */
+@media screen and (max-width: 1024px) {
+    .product-card {
+        flex: 1 1 calc(33.33% - 15px); /* 3 欄 */
+    }
+}
+
+/* 🔹 RWD（手機） */
+@media screen and (max-width: 768px) {
+    .product-card {
+        flex: 1 1 calc(50% - 15px); /* 2 欄 */
+    }
+}
 /* 產品區塊 */
 .productArea{
     display: flex;
@@ -134,6 +200,10 @@ video {
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
 }
+
+/* 熱銷排行榜區 */
+
+
 /* 🔹 人體圖 */
 .body-map {
     position: relative;
