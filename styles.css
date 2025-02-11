@@ -1,0 +1,218 @@
+/* 🔹 全站基礎設定 */
+body {
+    font-family: 'Noto Sans', 'Microsoft YaHei', sans-serif;
+    background-color: #E3F2FD;
+    margin: 0;
+    padding: 0;
+}
+
+/* 🔹 Navbar */
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background: rgba(255, 255, 255, 0.9);
+    backdrop-filter: blur(10px);
+    padding: 12px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+}
+
+/* 🔹 選單 */
+.navbar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.navbar li {
+    position: relative;
+}
+
+.navbar a {
+    color: #0D47A1;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px 16px;
+    display: block;
+    transition: background 0.3s ease, color 0.3s ease;
+}
+
+.navbar a:hover {
+    background: #BBDEFB;
+    border-radius: 6px;
+}
+
+/* 🔹 Dropdown 預設隱藏 */
+.dropdown-menu {
+    display: none;
+    position: absolute;
+    top: 40px;
+    left: 0;
+    background: white;
+    border-radius: 8px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    min-width: 140px;
+    padding: 8px 0;
+}
+
+.dropdown:hover .dropdown-menu {
+    display: block;
+}
+
+.dropdown-menu li a {
+    padding: 10px 16px;
+    color: #0D47A1;
+    display: block;
+}
+
+.dropdown-menu li a:hover {
+    background: #E3F2FD;
+    border-radius: 6px;
+}
+
+/* 🔹 內容區塊 */
+.container {
+    max-width: 800px;
+    margin: 80px auto 40px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+/* 🔹 標題 */
+.title {
+    font-size: 24px;
+    color: #0D47A1;
+    font-weight: bold;
+    margin-bottom: 20px;
+    padding: 10px 0;
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB);
+    border-radius: 8px;
+}
+
+/* 🔹 按鈕 */
+button {
+    background-color: #0D47A1;
+    color: white;
+    font-size: 16px;
+    padding: 10px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+button:hover {
+    background-color: #1565C0;
+}
+
+/* 🔹 影片 */
+video {
+    border-radius: 12px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%;
+}
+/* 🔹 人體圖 */
+.body-map {
+    position: relative;
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.body-image {
+    width: 100%;
+    display: block;
+}
+
+/* 🔹 身體部位按鈕 */
+.body-part {
+    position: absolute;
+    color: #0D47A1;
+    font-size: 18px;
+    font-weight: bold;
+    text-decoration: none;
+    background: rgba(255, 255, 255, 0.8);
+    padding: 6px 10px;
+    border-radius: 6px;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+}
+
+.body-part:hover {
+    background: #BBDEFB;
+}
+
+/* 🔹 各部位座標 */
+.head { top: -3%; left: 50%; transform: translateX(-50%); }
+.eye { top: 3%; left: 53%; transform: translateX(-50%); }
+.chest { top: 18%; left: 50%; transform: translateX(-50%); }
+.leg { bottom: 38%; left: 56%; transform: translateX(-50%); }
+
+/* 🔹 RWD（平板） */
+@media screen and (max-width: 1024px) {
+    .body-part {
+        font-size: 16px;
+        padding: 5px 8px;
+    }
+}
+
+/* 🔹 RWD（手機） */
+@media screen and (max-width: 768px) {
+    .body-map {
+        max-width: 300px;
+    }
+    .body-part {
+        font-size: 14px;
+        padding: 4px 6px;
+    }
+}
+
+/* 🔹 平板 RWD */
+@media screen and (max-width: 1024px) {
+    .navbar {
+        padding: 10px;
+    }
+    .navbar ul {
+        flex-direction: row;
+        gap: 10px;
+    }
+    .container {
+        max-width: 90%;
+        padding: 15px;
+    }
+}
+
+/* 🔹 手機 RWD */
+@media screen and (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: center;
+    }
+    .navbar ul {
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+    .navbar li {
+        width: 100%;
+    }
+    .dropdown-menu {
+        position: static;
+        display: none;
+        width: 100%;
+    }
+    .dropdown:hover .dropdown-menu {
+        display: block;
+    }
+    .container {
+        max-width: 95%;
+    }
+}
