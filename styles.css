@@ -97,6 +97,21 @@ body {
     border-radius: 8px;
 }
 
+/* 產品區塊 */
+.productArea{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.product{
+    width: 400px;
+    height:500px;
+    margin: 25px;
+}
+.product img{
+    width: 300px;
+    height: 300px;
+}
 /* 🔹 按鈕 */
 button {
     background-color: #0D47A1;
