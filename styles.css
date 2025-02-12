@@ -47,9 +47,9 @@ body {
     border-radius: 6px;
 }
 
-/* 🔹 Dropdown 預設隱藏 */
-.dropdown-menu {
-    display: none;
+/* 🔹 Drop-down */
+.navbar .dropdown-menu {
+    display: none;  /* 預設隱藏 */
     position: absolute;
     top: 40px;
     left: 0;
@@ -60,17 +60,18 @@ body {
     padding: 8px 0;
 }
 
-.dropdown:hover .dropdown-menu {
+/* 滑鼠移過時顯示下拉選單 */
+.navbar .dropdown:hover .dropdown-menu {
     display: block;
 }
 
-.dropdown-menu li a {
+.navbar .dropdown-menu a {
     padding: 10px 16px;
     color: #0D47A1;
     display: block;
 }
 
-.dropdown-menu li a:hover {
+.navbar .dropdown-menu a:hover {
     background: #E3F2FD;
     border-radius: 6px;
 }
@@ -227,6 +228,7 @@ video {
     border-radius: 12px;
     box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
     width: 100%;
+
 }
 /* 衛教文案頁面區 */
 .content{
@@ -313,48 +315,30 @@ video {
     }
 }
 
-/* 🔹 平板 RWD */
-@media screen and (max-width: 1024px) {
-    .navbar {
-        padding: 10px;
-    }
-
-    .navbar ul {
-        flex-direction: row;
-        gap: 10px;
-    }
-
-    .container {
-        max-width: 90%;
-        padding: 15px;
+/* 電腦版 hover 顯示 */
+@media screen and (min-width: 769px) {
+    .dropdown:hover .dropdown-menu {
+        display: flex;
     }
 }
 
-/* 🔹 手機 RWD */
+🔹 手機和平板點擊展開
 @media screen and (max-width: 768px) {
-    .navbar {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .navbar ul {
-        flex-direction: column;
-        width: 100%;
-        text-align: center;
-    }
-
-    .navbar li {
-        width: 100%;
-    }
-
     .dropdown-menu {
         position: static;
-        display: none;
         width: 100%;
+        display: none; /* 預設隱藏 */
+    }
+    .dropdown.active .dropdown-menu {
+        display: block; /* JavaScript 控制展開 */
     }
 
-    .dropdown:hover .dropdown-menu {
-        display: block;
+    .navbar a {
+        font-size: 12px; /* 手機版縮小字級 */
+    }
+
+    .dropdown-menu li a {
+        font-size: 10px; /* 下拉選單字級再小一點 */
     }
 
     .container {
