@@ -49,7 +49,8 @@ body {
 
 /* 🔹 Drop-down */
 .navbar .dropdown-menu {
-    display: none;  /* 預設隱藏 */
+    display: none;
+    /* 預設隱藏 */
     position: absolute;
     top: 40px;
     left: 0;
@@ -98,6 +99,7 @@ body {
     background: linear-gradient(to right, #E3F2FD, #BBDEFB);
     border-radius: 8px;
 }
+
 /* 衛教頁 */
 .columnContainer {
     max-width: 1200px;
@@ -110,10 +112,12 @@ body {
     text-align: center;
     display: flex;
 }
-.column{
+
+.column {
     width: 33%;
     margin: 50px 100px;
 }
+
 /* 🔹 熱銷區塊標題 */
 .section-title {
     font-size: 24px;
@@ -230,12 +234,14 @@ video {
     width: 100%;
 
 }
+
 /* 衛教文案頁面區 */
-.content{
+.content {
     display: flex;
     flex-direction: column;
     align-items: center;
 }
+
 /* 熱銷排行榜頁面區 */
 
 
@@ -322,23 +328,28 @@ video {
     }
 }
 
-🔹 手機和平板點擊展開
+/* 🔹 手機和平板點擊展開  */
 @media screen and (max-width: 768px) {
     .dropdown-menu {
         position: static;
         width: 100%;
-        display: none; /* 預設隱藏 */
+        display: none;
+        /* 預設隱藏 */
     }
+
     .dropdown.active .dropdown-menu {
-        display: block; /* JavaScript 控制展開 */
+        display: block;
+        /* JavaScript 控制展開 */
     }
 
     .navbar a {
-        font-size: 12px; /* 手機版縮小字級 */
+        font-size: 12px;
+        /* 手機版縮小字級 */
     }
 
     .dropdown-menu li a {
-        font-size: 10px; /* 下拉選單字級再小一點 */
+        font-size: 10px;
+        /* 下拉選單字級再小一點 */
     }
 
     .container {
