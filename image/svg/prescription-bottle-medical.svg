@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg
+   aria-hidden="true"
+   focusable="false"
+   data-prefix="fal"
+   data-icon="prescription-bottle-medical"
+   class="svg-inline--fa fa-prescription-bottle-medical"
+   role="img"
+   viewBox="0 0 384 512"
+   version="1.1"
+   id="svg1"
+   sodipodi:docname="prescription-bottle-medical.svg"
+   inkscape:version="1.3.2 (091e20e, 2023-11-25, custom)"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <defs
+     id="defs1" />
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#000000"
+     borderopacity="0.25"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0.0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:zoom="1.15625"
+     inkscape:cx="192"
+     inkscape:cy="256"
+     inkscape:window-width="1440"
+     inkscape:window-height="830"
+     inkscape:window-x="-6"
+     inkscape:window-y="-6"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="svg1" />
+  <path
+     fill="currentColor"
+     d="M336 32c8.8 0 16 7.2 16 16V80c0 8.8-7.2 16-16 16H48c-8.8 0-16-7.2-16-16V48c0-8.8 7.2-16 16-16H336zM48 0C21.5 0 0 21.5 0 48V80c0 26.5 21.5 48 48 48H336c26.5 0 48-21.5 48-48V48c0-26.5-21.5-48-48-48H48zM32 160V448c0 35.3 28.7 64 64 64H288c35.3 0 64-28.7 64-64V160H320V448c0 17.7-14.3 32-32 32H96c-17.7 0-32-14.3-32-32V160H32zm149.3 32c-17.7 0-32 14.3-32 32v21.3H128c-17.7 0-32 14.3-32 32v21.3c0 17.7 14.3 32 32 32h21.3V352c0 17.7 14.3 32 32 32h21.3c17.7 0 32-14.3 32-32V330.7H256c17.7 0 32-14.3 32-32V277.3c0-17.7-14.3-32-32-32H234.7V224c0-17.7-14.3-32-32-32H181.3zm0 32h21.3l0 37.3c0 8.8 7.2 16 16 16H256v21.3l-37.3 0c-8.8 0-16 7.2-16 16V352H181.3V314.7c0-8.8-7.2-16-16-16H128V277.3h37.3c4.2 0 8.3-1.7 11.3-4.7s4.7-7.1 4.7-11.3V224z"
+     id="path1"
+     style="fill:#0a3c8c;fill-opacity:1" />
+</svg>
