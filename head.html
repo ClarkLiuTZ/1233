@@ -1,14 +1,16 @@
 <!DOCTYPE html>
 <html lang="zh">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>疾病判讀</title>
     <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
     <header>
-    <!-- 🔹 Navbar -->
+        <!-- 🔹 Navbar -->
         <!-- 🔹 Navbar -->
         <nav class="navbar">
             <ul>
@@ -28,30 +30,49 @@
     </header>
     <h1 class="pageH1">疾病判讀</h1>
     <div class="columnContainer">
-        <div class="column left">
-            <h2>疾病判讀</h2>
-            <ul>
-                <li><a href="page3.html?disease=偏頭痛">偏頭痛</a></li>
-                <li><a href="page3.html?disease=緊張性頭痛">緊張性頭痛</a></li>
-                <li><a href="page3.html?disease=叢集性頭痛">叢集性頭痛</a></li>
-            </ul>
-        </div>
-        <div class="column middle">
-            <h2>衛教文章</h2>
-            <ul>
-                <li><a href="page3.html?article=偏頭痛">偏頭痛的成因與預防</a></li>
-                <li><a href="page3.html?article=緊張性頭痛">如何舒緩緊張性頭痛</a></li>
-                <li><a href="page3.html?article=叢集性頭痛">叢集性頭痛的治療方式</a></li>
-            </ul>
-        </div>
-        <div class="column right">
-            <h2>推薦產品</h2>
-            <ul>
-                <li><a href="page4.html?product=止痛藥">止痛藥</a></li>
-                <li><a href="page4.html?product=草本舒緩貼片">草本舒緩貼片</a></li>
-                <li><a href="page4.html?product=冷敷包">冷敷包</a></li>
-            </ul>
-        </div>
+        <div class="columnTopbar"><div class="healthIcon"><img src="./image/svg/head-side.svg" alt=""></div>
+        <h2><b>頭部</b></h2></div>
+        <div class="columnContainerbar">
+        <section class="column left">
+            <div>
+                <h2 class="bar">疾病判讀</h2>
+            </div>
+            <div class="barInner">
+                <div class="healthIcon"><img src="image/svg/viruses.svg" alt=""></div>
+                <div >
+                    <div class="barInerliner"><a href="page3.html?disease=偏頭痛">偏頭痛</a></div>
+                    <div class="barInerliner"><a href="page3.html?disease=緊張性頭痛">緊張性頭痛</a></div>
+                    <div class="barInerliner"><a href="page3.html?disease=叢集性頭痛">叢集性頭痛</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="column middle">
+            <div>
+                <h2 class="bar">衛教文章</h2>
+            </div>
+            <div class="barInner">
+                <div class="healthIcon"><img src="image/svg/user-doctor.svg" alt=""></div>
+                <div>
+                    <div class="barInerliner"><a href="page3.html?article=偏頭痛">偏頭痛的成因與預防</a></div>
+                    <div class="barInerliner"><a href="page3.html?article=緊張性頭痛">如何舒緩緊張性頭痛</a></div>
+                    <div class="barInerliner"><a href="page3.html?article=叢集性頭痛">叢集性頭痛的治療方式</a></div>
+                </div>
+            </div>
+        </section>
+        <section class="column right">
+            <div>
+                <h2 class="bar">推薦產品</h2>
+            </div>
+            <div class="barInner">
+                <div class="healthIcon"><img src="image/svg/prescription-bottle-medical.svg" alt=""></div>
+                <div>
+                    <div class="barInerliner"><a href="page4.html?product=止痛藥">止痛藥</a></div>
+                    <div class="barInerliner"><a href="page4.html?product=草本舒緩貼片">草本舒緩貼片</a></div>
+                    <div class="barInerliner"><a href="page4.html?product=冷敷包">冷敷包</a></div>
+                </div>
+            </div>
+        </section></div>
     </div>
 </body>
+
 </html>
