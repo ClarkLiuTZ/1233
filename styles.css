@@ -1,50 +1,138 @@
-/* eric reset *//* http://meyerweb.com/eric/tools/css/reset/ 
+/* eric reset */
+/* http://meyerweb.com/eric/tools/css/reset/ 
    v2.0 | 20110126
    License: none (public domain)
 */
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    font-size: 100%;
+    font: inherit;
+    vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+    display: block;
 }
+
 body {
-	line-height: 1;
+    line-height: 1;
 }
-ol, ul {
-	list-style: none;
+
+ol,
+ul {
+    list-style: none;
 }
-blockquote, q {
-	quotes: none;
+
+blockquote,
+q {
+    quotes: none;
 }
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-	content: none;
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+    content: '';
+    content: none;
 }
+
 table {
-	border-collapse: collapse;
-	border-spacing: 0;
+    border-collapse: collapse;
+    border-spacing: 0;
 }
 
 
@@ -56,6 +144,37 @@ body {
     padding: 0;
 }
 
+/* 大正製藥css */
+.taiColumncontainer{
+    max-width: 90%;
+    max-height: auto;
+    margin: 100px auto;
+    background: white;
+    border-radius: 12px;
+    box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.taiColumncontainer ul li{
+    margin-bottom: 3px;
+    padding-left: 24px;
+    background: url(https://search.sato-seiyaku.co.jp/pub/wp-content/themes/test_sato/assets/images/common/icon_arrow1.svg) no-repeat left center;
+    background-size: 16px 16px;
+    font-size: 14px;
+    line-height: 1.5;
+}
+.taiColumncontainerBar{
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+    align-items: center;
+    padding: 20px 0;
+    border-top: solid 1px #0a3c8c;;
+}
 /* 🔹 Navbar */
 .navbar {
     position: fixed;
@@ -137,9 +256,11 @@ body {
     box-shadow: 0px 6px 12px rgba(0, 0, 0, 0.1);
     text-align: center;
 }
-.pageH1{
+
+.pageH1 {
     display: none;
 }
+
 /* 🔹 標題 */
 .title {
     font-size: 24px;
@@ -175,37 +296,46 @@ body {
     overflow: hidden;
     margin: 0 10px;
 }
-.column ul li{
+
+.column ul li {
     list-style: none;
 }
-.columnTopbar{
+
+.columnTopbar {
     margin: 10px;
 }
-.columnContainerbar{
+
+.columnContainerbar {
     display: flex;
     justify-content: center;
     margin: 30px 20px;
+    align-items: center
 }
-.bar{
+
+.bar {
     color: #FFFFFF;
     width: 100%;
     line-height: 70px;
     height: 70px;
     background-color: #0a3c8c;
 }
-.barInner{
+
+.barInner {
     display: flex;
     height: 280px;
     align-items: center;
     justify-content: space-around;
     background-color: #f4f5f9;
 }
-.barInerliner{
+
+.barInerliner {
     margin: 10px 0px;
 }
-.healthIcon{
+
+.healthIcon {
     width: 30px;
 }
+
 /* 🔹 熱銷區塊標題 */
 .section-title {
     font-size: 24px;
