@@ -618,6 +618,11 @@ video {
     left: 64%;
     transform: translateX(-50%);
 }
+.chronic{
+    bottom: 45%;
+    left: 85%;
+    transform: translateX(-50%);
+}
 
 /* 🔹 RWD（平板） */
 @media screen and (max-width: 1024px) {
