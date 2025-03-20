@@ -1,9 +1,14 @@
+<<<<<<< Updated upstream
 /* eric reset */
 /* http://meyerweb.com/eric/tools/css/reset/ 
+=======
+/* eric reset *//* http://meyerweb.com/eric/tools/css/reset/ 
+>>>>>>> Stashed changes
    v2.0 | 20110126
    License: none (public domain)
 */
 
+<<<<<<< Updated upstream
 html,
 body,
 div,
@@ -133,6 +138,50 @@ q:after {
 table {
     border-collapse: collapse;
     border-spacing: 0;
+=======
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+>>>>>>> Stashed changes
 }
 
 
@@ -276,7 +325,10 @@ body {
 /* 衛教頁 */
 .columnContainer {
     max-width: 90%;
+<<<<<<< Updated upstream
     max-width: 90%;
+=======
+>>>>>>> Stashed changes
     max-height: 1200px;
     margin: 100px auto;
     background: white;
@@ -286,8 +338,11 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center;
+<<<<<<< Updated upstream
     flex-direction: column;
     align-items: center;
+=======
+>>>>>>> Stashed changes
 }
 
 .column {
@@ -298,6 +353,7 @@ body {
     border-radius: 10px 10px 0 0;
     overflow: hidden;
     margin: 0 10px;
+<<<<<<< Updated upstream
 }
 
 .column ul li {
@@ -361,6 +417,40 @@ body {
 .healthIcon{
     width: 30px;
 }
+=======
+}
+.column ul li{
+    list-style: none;
+}
+.columnTopbar{
+    margin: 10px;
+}
+.columnContainerbar{
+    display: flex;
+    justify-content: center;
+    margin: 30px 20px;
+}
+.bar{
+    color: #FFFFFF;
+    width: 100%;
+    line-height: 70px;
+    height: 70px;
+    background-color: #0a3c8c;
+}
+.barInner{
+    display: flex;
+    height: 280px;
+    align-items: center;
+    justify-content: space-around;
+    background-color: #f4f5f9;
+}
+.barInerliner{
+    margin: 10px 0px;
+}
+.healthIcon{
+    width: 30px;
+}
+>>>>>>> Stashed changes
 /* 🔹 熱銷區塊標題 */
 .section-title {
     font-size: 24px;
@@ -553,7 +643,11 @@ video {
     left: 61%;
     transform: translateX(-50%);
 }
+<<<<<<< Updated upstream
 .mouth{
+=======
+.mouse{
+>>>>>>> Stashed changes
     top: 12%;
     left: 41%;
     transform: translateX(-50%);
@@ -594,8 +688,13 @@ video {
     transform: translateX(-50%);
 }
 .stomach{
+<<<<<<< Updated upstream
     top: 39%;
     left: 69%;
+=======
+    top: 38%;
+    left: 72%;
+>>>>>>> Stashed changes
     transform: translateX(-50%);
 }
 .ppart{
@@ -618,11 +717,14 @@ video {
     left: 64%;
     transform: translateX(-50%);
 }
+<<<<<<< Updated upstream
 .chronic{
     bottom: 45%;
     left: 85%;
     transform: translateX(-50%);
 }
+=======
+>>>>>>> Stashed changes
 
 /* 🔹 RWD（平板） */
 @media screen and (max-width: 1024px) {
