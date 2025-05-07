@@ -247,6 +247,22 @@ body {
 }
 
 /* 🔹 內容區塊 */
+#idleVideoContainer {
+    position: fixed;
+    top: 0; left: 0;
+    width: 100vw; height: 100vh;
+    background: black;
+    /* display:none; 預設隱藏 */
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+video {
+    object-fit: cover;
+}
+
+
 .container {
     max-width: 1200px;
     margin: 100px auto;
